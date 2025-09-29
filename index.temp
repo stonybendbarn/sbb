@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stony Bend Barn | Carolina Fine Woodworking</title>
+  <meta name="description" content="Custom cutting boards, game boards, coasters, flight boards and more.">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      color: #222;
+      background: #fafafa;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .hero img {
+      max-width: 280px;
+      height: auto;
+    }
+    .hero p {
+      margin: .5rem 0;
+    }
+    .about {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .about h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .col {
+      text-align: center;
+    }
+    .col img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #eee;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+      background: #fff;
+      font-size: .9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">INVENTORY</a>
+      <a href="#">GALLERY</a>
+      <a href="#">CUSTOM ORDERS</a>
+      <a href="#">EVENTS</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/logo.png" alt="Stony Bend Barn Logo">
+    <p><strong>Custom Cutting Boards, Game Boards, Coasters, Flight Boards and more!</strong></p>
+    <p><a href="mailto:stonybendbarn@gmail.com">stonybendbarn@gmail.com</a></p>
+  </section>
+
+  <section class="about">
+    <h2>About Stony Bend Barn</h2>
+    <div class="cols">
+      <div class="col">
+        <img src="images/our-story.jpg" alt="Our Story">
+        <h3>Our Story</h3>
+        <p>At Stony Bend Barn, we are driven by a passion for crafting timeless, beautiful, and functional pieces built to last for generations. What began as a personal endeavor—creating custom designs for friends and family—has evolved into a continued dedication to the art of woodworking.</p>
+      </div>
+      <div class="col">
+        <img src="images/our-process.jpg" alt="Our Process">
+        <h3>Our Process</h3>
+        <p>We begin with meticulously chosen wood and craft each piece with precision and care. Attention to detail and quality craftsmanship are paramount, whether we’re creating a cutting board or a set of coasters. Every step of the process is carefully considered to meet the highest standards of excellence.</p>
+      </div>
+      <div class="col">
+        <img src="images/our-services.jpg" alt="Our Services">
+        <h3>Our Services</h3>
+        <p>We offer a variety of woodworking services, including custom engraving with CNC and laser technology. Our commitment to exceptional service ensures every project is tailored to meet your needs. Reach out today to discuss your next woodworking project—we’ll help bring your ideas to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © <span id="year"></span> Stony Bend Barn – All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
